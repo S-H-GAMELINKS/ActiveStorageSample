@@ -27,6 +27,6 @@ class CommentsController < ApplicationController
         end
 
         def comment_params
-            params.require(:comment).permit(:content, :images)
+            params.require(:comment).permit(:content, images: [])
         end
 end
